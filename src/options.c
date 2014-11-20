@@ -27,13 +27,13 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 #include "options.h"
 
 static void scrot_parse_option_array(int argc, char **argv);
-scrotoptions opt;
+struct scrotoptions opt;
 
 void
 init_parse_options(int argc, char **argv)
 {
    /* Set default options */
-   memset(&opt, 0, sizeof(scrotoptions));
+   memset(&opt, 0, sizeof(struct scrotoptions));
 
    opt.quality = 75;
 

@@ -26,7 +26,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 #ifndef OPTIONS_H
 #define OPTIONS_H
 
-struct __scrotoptions
+struct scrotoptions
 {
    int debug_level;
    int delay;
@@ -46,6 +46,6 @@ struct __scrotoptions
 void init_parse_options(int argc, char **argv);
 char *name_thumbnail(char *name);
 void options_parse_thumbnail(char *optarg);
-extern scrotoptions opt;
+extern struct scrotoptions opt;
 
 #endif
