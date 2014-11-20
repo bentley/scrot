@@ -1,1 +1,3 @@
+This program requires imlib2 and giblib.
+
 To build, run "make" at your shell prompt.
