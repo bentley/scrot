@@ -50,11 +50,9 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 #include <sys/wait.h>
 #include <giblib/giblib.h>
 
-
 #include "config.h"
 #include "structs.h"
 #include "getopt.h"
-#include "debug.h"
 
 #ifndef __GNUC__
 # define __attribute__(x)
