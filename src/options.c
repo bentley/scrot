@@ -23,7 +23,11 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 */
 
-#include "scrot.h"
+#include <getopt.h>
+#include <stdio.h>
+#include <string.h>
+#include <giblib/giblib.h>
+
 #include "options.h"
 
 static void scrot_parse_option_array(int argc, char **argv);

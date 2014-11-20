@@ -34,28 +34,12 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 #include <X11/Xresource.h>
 #include <X11/cursorfont.h>
 
-#include <stdio.h>
-#include <string.h>
-#include <stdlib.h>
-#include <unistd.h>
-#include <ctype.h>
 #include <sys/stat.h>
-#include <sys/types.h>
-#include <sys/time.h>
-#include <errno.h>
-#include <dirent.h>
-#include <stdarg.h>
 #include <time.h>
-#include <signal.h>
-#include <sys/wait.h>
-#include <giblib/giblib.h>
-
-#include "getopt.h"
+#include <stdio.h>
 
 typedef void (*sighandler_t) (int);
 
-void show_usage(void);
-void show_version(void);
 void show_mini_usage(void);
 void init_x_and_imlib(char *dispstr, int screen_num);
 char *chop_file_from_full_path(char *str);

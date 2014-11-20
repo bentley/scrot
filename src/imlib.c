@@ -23,8 +23,11 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 */
 
-#include "scrot.h"
 #include "options.h"
+
+#include <Imlib2.h>
+#include <X11/Xlib.h>
+#include <giblib/giblib.h>
 
 Display *disp = NULL;
 Visual *vis = NULL;
