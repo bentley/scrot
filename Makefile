@@ -4,8 +4,6 @@
 all: scrot
 
 SCROT_OBJECTS = \
-	getopt.o \
-	getopt1.o \
 	imlib.o \
 	main.o \
 	options.o
