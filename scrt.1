@@ -12,13 +12,13 @@
 .\" ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
 .\" OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 .Dd November 20, 2014
-.Dt SCROT 1
+.Dt SCRT 1
 .Os
 .Sh NAME
-.Nm scrot
+.Nm scrt
 .Nd capture a screenshot
 .Sh SYNOPSIS
-.Nm scrot
+.Nm scrt
 .Op Fl bchmsv
 .Op Fl d Ar n
 .Op Fl e Ar command
@@ -26,7 +26,7 @@
 .Op Fl t Ar n
 .Op Ar file
 .Sh DESCRIPTION
-.Nm scrot
+.Nm scrt
 takes a screenshot and saves it to
 .Ar file
 (if specified) or to a timestamped filename.
@@ -46,5 +46,7 @@ The options are as follows:
 .El
 .Sh AUTHORS
 .Nm
-was originally written by
+is based on
+.Xr scrot 1 ,
+originally written by
 .An Tom Gilbert Aq Mt gilbertt@linuxbrit.co.uk .

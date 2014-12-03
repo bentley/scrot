@@ -26,7 +26,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 #include <Imlib2.h>
 #include <giblib/giblib.h>
 
-#include "scrot.h"
+#include "scrt.h"
 #include "options.h"
 
 int
