@@ -29,7 +29,6 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 struct scrotoptions
 {
    int debug_level;
-   int delay;
    int countdown;
    int select;
    int quality;

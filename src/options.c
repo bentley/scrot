@@ -59,7 +59,6 @@ scrot_parse_option_array(int argc, char **argv)
       {"multidisp", 0, 0, 'm'},
       /* toggles */
       {"thumb", 1, 0, 't'},
-      {"delay", 1, 0, 'd'},
       {"quality", 1, 0, 'q'},
       {"exec", 1, 0, 'e'},
       {"debug-level", 1, 0, '+'},
@@ -83,9 +82,6 @@ scrot_parse_option_array(int argc, char **argv)
            break;
         case 'b':
            opt.border = 1;
-           break;
-        case 'd':
-           opt.delay = atoi(optarg);
            break;
         case 'e':
            opt.exec = gib_estrdup(optarg);
@@ -225,7 +221,6 @@ show_usage(void)
            "  -v, --version             output version information and exit\n"
            "  -b, --border              When selecting a window, grab wm border too\n"
            "  -c, --count               show a countdown before taking the shot\n"
-           "  -d, --delay NUM           wait NUM seconds before taking a shot\n"
            "  -e, --exec APP            run APP on the resulting screenshot\n"
            "  -q, --quality NUM         Image quality (1-100) high value means\n"
            "                            high size, low compression. Default: 75.\n"

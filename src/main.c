@@ -54,7 +54,6 @@ main(int argc,
   if (opt.select)
     image = scrot_sel_and_grab_image();
   else {
-    scrot_do_delay();
     if (opt.multidisp) {
       image = scrot_grab_shot_multi();
     } else {
@@ -126,28 +125,6 @@ main(int argc,
   gib_imlib_free_image_and_decache(image);
 
   return 0;
-}
-
-void
-scrot_do_delay(void)
-{
-  if (opt.delay) {
-    if (opt.countdown) {
-      int i;
-
-      printf("Taking shot in %d.. ", opt.delay);
-      fflush(stdout);
-      sleep(1);
-      for (i = opt.delay - 1; i > 0; i--) {
-        printf("%d.. ", i);
-        fflush(stdout);
-        sleep(1);
-      }
-      printf("0.\n");
-      fflush(stdout);
-    } else
-      sleep(opt.delay);
-  }
 }
 
 Imlib_Image
@@ -301,7 +278,6 @@ scrot_sel_and_grab_image(void)
 
 
   if (done < 2) {
-    scrot_do_delay();
     if (rect_w > 5) {
       /* if a rect has been drawn, it's an area selection */
       rw = ev.xbutton.x - rx;
